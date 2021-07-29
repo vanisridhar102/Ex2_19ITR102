@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+             fieldset{border:1px solid olive; background-color:gray;}
+             form{width:50%;}
+             input,select{width: 250px; background-color:skyblue;}
+        </style>
+    </head>
+    <body style="background-image:url('image6.jpg'); background-size: 100% 100%;">
+    <center>
+    <form method="get">
+            <fieldset>
+            <legend align="center"><h2>ENQUIRY_FORM :</h2> </legend>
+            <table >
+                <tr>
+                  <td><h4>CUSTOMER_NAME : </h4></td>
+                  <td><input type="text" name="CUSTOMER_NAME" id="1" pattern="[a-z,A-Z]{*}" required maxlength="30"/></td>
+               </tr><br>
+               <tr>
+                    <td><h4>Date_Of_Birth : </h4></td>
+                    <td><input type="date" name="CUSTOMER_DOB" id="2"/></td>
+                </tr>
+                <tr>
+                    <td><h4>GENDER : </h4></td>
+                    <td><input type="radio" name="GENDER" value="Male"/>Male
+                        <input type="radio" name="GENDER" value="Female"/>Female
+                        <input type="radio" name="GENDER" value="Others"/>Others</td>
+                </tr>
+                <tr>
+                    <td><h4>CUSTOMER_EMAIL : </h4></td>
+                    <td><input type="email" name="CUSTOMER_Email" required/></td>
+                </tr>
+                <tr>
+                    <td><h4>MOBILE_NUMBER : </h4></td>
+                    <td><input type="text" name="CUSTOMER_NUMBER" pattern="[0-9]{10}" required/></td>
+                </tr>
+                <tr>
+                    <td><h4>DELIVERY_ADDRESS : </h4></td>
+                    <td><input type="text" name="CUSTOMER_EMAIL"/></td>
+                </tr>
+                <tr>
+                    <td><h4>CITY : </h4></td>
+                    <td><select name="city">
+                        <option value="choose">Choose city</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Erode">Erode</option>
+                        <option value="coimbatore">Covai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>PINCODE :</h4></td>
+                    <td><input type="text" name="PINCODE" pattern="[0-9]{6}" required></td>
+                </tr>
+                <tr>
+                    <td><h4>PRODUCTS : </h4></td>
+                    <td><input type="checkbox" name="products"/> Sim Card
+                        <input type="checkbox" name="products"/> Laptop
+                        <input type="checkbox" name="products"/> Cell Phone
+                        <input type="checkbox" name="products"/> Head Phone
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>PURCHASE_MODE : </h4></td>
+                    <td><select name="mode">
+                         <option value="choose mode">Choose mode</option>
+                         <option value="online mode">Online mode</option>
+                         <option value="offline mode">Offline mode</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><h4>EMI Option Required?</h4></td>
+                    <td><input type="radio" name="emi" value="Yes">Yes
+                        <input type="radio" name="emi" value="No">No
+                    </td>
+                </tr>
+                <div>
+                <tr>
+                    <td><input type="submit" name="submit" style="background-color: red"> </td>
+                </tr>
+                </div>
+            </legend>
+        </table>
+    </form>
+    </center>
+    </body>
+</html>
